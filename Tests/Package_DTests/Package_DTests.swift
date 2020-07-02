@@ -1,4 +1,3 @@
-// swift-tools-version:5.2
 /*
 © Copyright 2020, Little Green Viper Software Development LLC
 
@@ -21,36 +20,13 @@ CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFT
 Little Green Viper Software Development LLC: https://littlegreenviper.com
 */
 
-import PackageDescription
+import XCTest
+@testable import Package_D
 
-let package = Package(
-    name: "Package_D",
-    platforms: [
-        .iOS(.v11),
-        .tvOS(.v11),
-        .macOS(.v10_14),
-        .watchOS(.v5)
-    ],
-    products: [
-        .library(name: "Package-D", type: .dynamic, targets: ["Package_D"])
-    ],
-    dependencies: [
-        .package(name: "Package_C", url: "git@github.com:LittleGreenViper/SMPArticle-Package_C.git", from: "2.0.0"),
-        .package(name: "Package_A", url: "git@github.com:LittleGreenViper/SPMArticle-Package_A.git", from: "2.0.0")
-    ],
-    targets: [
-        .target(
-            name: "Package_D",
-            dependencies: [
-                .product(name: "Package-C", package: "Package_C"),
-                .product(name: "Package-A", package: "Package_A")
-            ]
-        ),
-        .testTarget(
-            name: "Package_DTests",
-            dependencies: [
-                "Package_D"
-            ]
-        )
-    ]
-)
+class test: XCTestCase {
+    func testQuickly() {
+        let text = Package_D().text
+        let comp = "Package_D, Version: 1.0.0\n\tPackage_C, Version: 2.0.0\n\t\tPackage_A, Version: 2.0.0\n\tPackage_A, Version: 2.0.0"
+        XCTAssertEqual(text, comp)
+    }
+}
