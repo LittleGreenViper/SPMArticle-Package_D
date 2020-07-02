@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "Package_A",
+        "repositoryURL": "git@github.com:LittleGreenViper/SPMArticle-Package_A.git",
+        "state": {
+          "branch": null,
+          "revision": "87fa2662bf9d644b5b1936a253b485bfd0f26582",
+          "version": "1.0.0"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
