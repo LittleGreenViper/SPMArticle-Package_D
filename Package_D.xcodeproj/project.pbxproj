@@ -7,66 +7,58 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D4090FC624AD659C00DC330A /* Package_D.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4090FB424AD654400DC330A /* Package_D.framework */; };
+		D413699E24AF521800AAC859 /* Package-C in Frameworks */ = {isa = PBXBuildFile; productRef = D413699D24AF521800AAC859 /* Package-C */; };
+		D41369A224AF525A00AAC859 /* libPackage_D.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D458C92224AF50FE00CBE423 /* libPackage_D.a */; };
 		D438FC9124AE334C00DF88A5 /* Package_DTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D438FC8F24AE334C00DF88A5 /* Package_DTests.swift */; };
-		D438FC9624AE33E500DF88A5 /* Package_D.swift in Sources */ = {isa = PBXBuildFile; fileRef = D438FC9524AE33E500DF88A5 /* Package_D.swift */; };
-		D4E8D22224AE611C007DCEB2 /* Package-C in Frameworks */ = {isa = PBXBuildFile; productRef = D4E8D22124AE611C007DCEB2 /* Package-C */; };
-		D4E8D22324AE611C007DCEB2 /* Package-C in Embed Frameworks */ = {isa = PBXBuildFile; productRef = D4E8D22124AE611C007DCEB2 /* Package-C */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		D458C92B24AF510400CBE423 /* Package_D.swift in Sources */ = {isa = PBXBuildFile; fileRef = D438FC9524AE33E500DF88A5 /* Package_D.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		D4090FC724AD659C00DC330A /* PBXContainerItemProxy */ = {
+		D413699F24AF524C00AAC859 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D4AC1F0824A8151800C340F9 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = D4090FB324AD654400DC330A;
-			remoteInfo = Package_C;
+			remoteGlobalIDString = D458C92124AF50FE00CBE423;
+			remoteInfo = Package_D;
 		};
 /* End PBXContainerItemProxy section */
 
-/* Begin PBXCopyFilesBuildPhase section */
-		D4C43C6824AE5EC100564965 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				D4E8D22324AE611C007DCEB2 /* Package-C in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
-		D4090FB424AD654400DC330A /* Package_D.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Package_D.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4090FC124AD659C00DC330A /* Package_DTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Package_DTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4090FD024AD67CB00DC330A /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 		D438FC8F24AE334C00DF88A5 /* Package_DTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Package_DTests.swift; sourceTree = "<group>"; };
 		D438FC9024AE334C00DF88A5 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D438FC9524AE33E500DF88A5 /* Package_D.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Package_D.swift; sourceTree = "<group>"; };
+		D458C92224AF50FE00CBE423 /* libPackage_D.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPackage_D.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		D4090FB124AD654400DC330A /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D4E8D22224AE611C007DCEB2 /* Package-C in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		D4090FBE24AD659C00DC330A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D4090FC624AD659C00DC330A /* Package_D.framework in Frameworks */,
+				D41369A224AF525A00AAC859 /* libPackage_D.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D458C92024AF50FE00CBE423 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D413699E24AF521800AAC859 /* Package-C in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D41369A124AF525A00AAC859 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D438FC8D24AE334C00DF88A5 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
@@ -107,53 +99,22 @@
 				D438FC9324AE33E500DF88A5 /* Sources */,
 				D438FC8D24AE334C00DF88A5 /* Tests */,
 				D4AC1F1124A8151800C340F9 /* Products */,
+				D41369A124AF525A00AAC859 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		D4AC1F1124A8151800C340F9 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D4090FB424AD654400DC330A /* Package_D.framework */,
 				D4090FC124AD659C00DC330A /* Package_DTests.xctest */,
+				D458C92224AF50FE00CBE423 /* libPackage_D.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
-/* Begin PBXHeadersBuildPhase section */
-		D4090FAF24AD654400DC330A /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXHeadersBuildPhase section */
-
 /* Begin PBXNativeTarget section */
-		D4090FB324AD654400DC330A /* Package_D */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = D4090FBB24AD654400DC330A /* Build configuration list for PBXNativeTarget "Package_D" */;
-			buildPhases = (
-				D4090FAF24AD654400DC330A /* Headers */,
-				D4090FB024AD654400DC330A /* Sources */,
-				D4090FB124AD654400DC330A /* Frameworks */,
-				D4090FB224AD654400DC330A /* Resources */,
-				D4C43C6824AE5EC100564965 /* Embed Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = Package_D;
-			packageProductDependencies = (
-				D4E8D22124AE611C007DCEB2 /* Package-C */,
-			);
-			productName = Package_CLib;
-			productReference = D4090FB424AD654400DC330A /* Package_D.framework */;
-			productType = "com.apple.product-type.framework";
-		};
 		D4090FC024AD659C00DC330A /* Package_DTests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = D4090FC924AD659C00DC330A /* Build configuration list for PBXNativeTarget "Package_DTests" */;
@@ -165,12 +126,31 @@
 			buildRules = (
 			);
 			dependencies = (
-				D4090FC824AD659C00DC330A /* PBXTargetDependency */,
+				D41369A024AF524C00AAC859 /* PBXTargetDependency */,
 			);
 			name = Package_DTests;
 			productName = test;
 			productReference = D4090FC124AD659C00DC330A /* Package_DTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D458C92124AF50FE00CBE423 /* Package_D */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D458C92824AF50FE00CBE423 /* Build configuration list for PBXNativeTarget "Package_D" */;
+			buildPhases = (
+				D458C91F24AF50FE00CBE423 /* Sources */,
+				D458C92024AF50FE00CBE423 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Package_D;
+			packageProductDependencies = (
+				D413699D24AF521800AAC859 /* Package-C */,
+			);
+			productName = Package_D;
+			productReference = D458C92224AF50FE00CBE423 /* libPackage_D.a */;
+			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
 
@@ -182,12 +162,12 @@
 				LastUpgradeCheck = 1150;
 				ORGANIZATIONNAME = "Little Green Viper Software Development LLC";
 				TargetAttributes = {
-					D4090FB324AD654400DC330A = {
-						CreatedOnToolsVersion = 11.5;
-					};
 					D4090FC024AD659C00DC330A = {
 						CreatedOnToolsVersion = 11.5;
 						LastSwiftMigration = 1150;
+					};
+					D458C92124AF50FE00CBE423 = {
+						CreatedOnToolsVersion = 11.5;
 					};
 				};
 			};
@@ -207,20 +187,13 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D4090FB324AD654400DC330A /* Package_D */,
+				D458C92124AF50FE00CBE423 /* Package_D */,
 				D4090FC024AD659C00DC330A /* Package_DTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		D4090FB224AD654400DC330A /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		D4090FBF24AD659C00DC330A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -231,14 +204,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		D4090FB024AD654400DC330A /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D438FC9624AE33E500DF88A5 /* Package_D.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		D4090FBD24AD659C00DC330A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -247,73 +212,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D458C91F24AF50FE00CBE423 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D458C92B24AF510400CBE423 /* Package_D.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		D4090FC824AD659C00DC330A /* PBXTargetDependency */ = {
+		D41369A024AF524C00AAC859 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = D4090FB324AD654400DC330A /* Package_D */;
-			targetProxy = D4090FC724AD659C00DC330A /* PBXContainerItemProxy */;
+			target = D458C92124AF50FE00CBE423 /* Package_D */;
+			targetProxy = D413699F24AF524C00AAC859 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		D4090FB924AD654400DC330A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = P53V4JS928;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.littlegreenviper.Package-C";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 5.0;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		D4090FBA24AD654400DC330A /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = P53V4JS928;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.littlegreenviper.Package-C";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 5.0;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 		D4090FCA24AD659C00DC330A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -351,6 +268,30 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.littlegreenviper.Package-CTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		D458C92924AF50FE00CBE423 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P53V4JS928;
+				EXECUTABLE_PREFIX = lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		D458C92A24AF50FE00CBE423 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P53V4JS928;
+				EXECUTABLE_PREFIX = lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
@@ -471,20 +412,20 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D4090FBB24AD654400DC330A /* Build configuration list for PBXNativeTarget "Package_D" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				D4090FB924AD654400DC330A /* Debug */,
-				D4090FBA24AD654400DC330A /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		D4090FC924AD659C00DC330A /* Build configuration list for PBXNativeTarget "Package_DTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D4090FCA24AD659C00DC330A /* Debug */,
 				D4090FCB24AD659C00DC330A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D458C92824AF50FE00CBE423 /* Build configuration list for PBXNativeTarget "Package_D" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D458C92924AF50FE00CBE423 /* Debug */,
+				D458C92A24AF50FE00CBE423 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -506,13 +447,13 @@
 			repositoryURL = "git@github.com:LittleGreenViper/SMPArticle-Package_C.git";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 2.0.0;
+				minimumVersion = 3.0.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		D4E8D22124AE611C007DCEB2 /* Package-C */ = {
+		D413699D24AF521800AAC859 /* Package-C */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = D4E8D22024AE611C007DCEB2 /* XCRemoteSwiftPackageReference "SMPArticle-Package_C" */;
 			productName = "Package-C";

@@ -35,7 +35,7 @@ let package = Package(
         .library(name: "Package-D", targets: ["Package_D"])
     ],
     dependencies: [
-        .package(name: "Package_C", url: "git@github.com:LittleGreenViper/SMPArticle-Package_C.git", from: "2.0.0")
+        .package(name: "Package_C", url: "git@github.com:LittleGreenViper/SMPArticle-Package_C.git", from: "3.0.0")
     ],
     targets: [
         .target(
