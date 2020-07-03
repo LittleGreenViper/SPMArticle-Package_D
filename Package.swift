@@ -35,15 +35,13 @@ let package = Package(
         .library(name: "Package-D", type: .dynamic, targets: ["Package_D"])
     ],
     dependencies: [
-        .package(name: "Package_C", url: "git@github.com:LittleGreenViper/SMPArticle-Package_C.git", from: "2.0.0"),
-        .package(name: "Package_A", url: "git@github.com:LittleGreenViper/SPMArticle-Package_A.git", from: "2.0.0")
+        .package(name: "Package_C", url: "git@github.com:LittleGreenViper/SMPArticle-Package_C.git", from: "2.0.0")
     ],
     targets: [
         .target(
             name: "Package_D",
             dependencies: [
-                .product(name: "Package-C", package: "Package_C"),
-                .product(name: "Package-A", package: "Package_A")
+                .product(name: "Package-C", package: "Package_C")
             ]
         ),
         .testTarget(
